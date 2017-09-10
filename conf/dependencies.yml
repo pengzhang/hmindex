@@ -1,0 +1,14 @@
+# Application dependencies
+
+require:
+    - play
+    - hmcore -> hmcore latest.integration
+    - hmcms -> hmcms latest.integration
+    
+repositories:
+    - HM55Modules:
+        type: local  
+        artifact: "${application.path}/../[module]"  
+        contains:
+            - hmcore
+            - hmcms
